@@ -59,6 +59,8 @@ p {
 
 }
 
+/* Ik gebruik hier display block om de tekst te centreren in combinatie met margin om de centrering responsive te houden */
+
 .groot {
     font-size: 100px;
 }
@@ -76,6 +78,8 @@ a {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
+
+/* Ik gebruik hier text decoration: none om de puntjes te verwijderen uit mijn navigatie */
 
 ul {
     list-style: none;
@@ -198,7 +202,7 @@ input {
     width: 1880px;
     height: 800px;
 
-    /* Dit is de breedte van het blok op de index pagina. Deze verandert per breakpoints*/
+    /* Dit is de breedte en hoogte van het blok op de index pagina. Deze verandert per breakpoint*/
 }
 
 .head h1 {
@@ -223,9 +227,6 @@ h2 {
 
 }
 
-.head p {
-    text-align: center;
-}
 
 
 @media all and (max-width: 1600px) {
@@ -313,6 +314,8 @@ h2 {
         width: 600px;
         height: 600px;
     }
+    
+    /* ik vergroot hier de tekst en blokken om beter te werken op mobiel formaat*/
 
     section img {
         width: 350px;
