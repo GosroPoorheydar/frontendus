@@ -1,6 +1,5 @@
-# frontendus
+# frontendus Bronnen voor mijn website:
 
-Bronnen voor mijn website: 
 
 Flex-wrap voor @Media Only:
 
