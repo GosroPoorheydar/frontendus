@@ -61,3 +61,11 @@ https://pixabay.com/photos/rio-de-janeiro-brazil-city-urban-1963744/ - Rio de Ja
 https://unsplash.com/@cestlucas - Yellowstone
 
 
+# Feedback ronde 1: - De feedback formulieren zitten in de repository.
+
+Al goede basis en structuur van html, onderzoek nog welke tags(zoals article bij wat passen. experimenteer nog met typografie/html.
+let op content indeling. Firza, klas 208
+
+# Feedback ronde 2: 
+
+Verwijs nog naar je bronnen, voeg een form toe, voeg Javascript toe, Voeg meer content toe. Sam , klas 208
