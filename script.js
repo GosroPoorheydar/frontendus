@@ -5,3 +5,5 @@ function groot() {
 }
 
 heen.addEventListener('click', groot);
+
+console.log(heen);
