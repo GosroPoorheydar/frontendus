@@ -2,7 +2,11 @@ body {
     background: linear-gradient(90deg, #31ffdc, #31bbff, #ff5733, #581845);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
+
+    /* de achtergrond van mijn website is een geanimeerde gradient. die heen en weer over het scherm gaat om een soort hypnotisch effect te geven. */
 }
+
+
 
 @keyframes gradient {
     0% {
@@ -17,7 +21,8 @@ body {
         background-position: 50%;
     }
 
-    /* Bron:  */
+    /* Bron: 
+https://codepen.io/P1N2O/pen/pyBNzX */
 }
 
 header,
@@ -25,11 +30,31 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 
+    /* Ik gebruik voor het grootste gedeelte een font, namelijk roboto, Bold voor headings en standaard voor tekst. */
+
 }
 
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+}
+
+ol li {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 12px;
+    width: 300px;
+
+    margin-right: 40px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+    width: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .groot {
@@ -66,8 +91,9 @@ li {
 
 }
 
+
 a:hover {
-    color: red;
+
     font-size: 36px;
     transition: 0.5s;
 }
@@ -82,6 +108,14 @@ section h1 {
 figcaption {
     font-family: 'Roboto', sans-serif;
 }
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
 
 h1:hover {
     color: black;
@@ -106,6 +140,8 @@ main section {
     width: 400px;
     height: 500px;
 
+    /* Ik gebruik hier een gradient voor de opmaak van mijn grid items. om een gevoel van schaduw te geven aan mijn items. 
+         Ik gebruik ook veel transitions om de overgang van responsive items veel mooier en gladder te maken.*/
 
 }
 
@@ -114,6 +150,8 @@ section img {
     height: 190px;
     margin-left: 5px;
     transition: 0.5s;
+
+    /* Alle images hebben dezelfde grootte om goed in elk artikel te passen..*/
 }
 
 section figcaption {
@@ -126,11 +164,6 @@ section h1 {
     text-align: center;
     font-size: 2em;
     color: white
-}
-
-section:hover {
-
-    transition: 1s;
 }
 
 main {
@@ -158,6 +191,19 @@ input {
     margin: 10px;
 }
 
+.head {
+    width: 1880px;
+
+    /* Dit is de breedte van het blok op de index pagina. Deze verandert per breakpoints*/
+}
+
+.head h1 {
+    font-size: 100px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+    text-shadow: 5px 2px #000000;
+}
+
 h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -169,29 +215,27 @@ h2 {
     width: 600px;
     height: 1200px;
 
+    /* Dit is het grid-item dat de basis vormt voor mijn form. */
 
 }
 
-
-
-.p2 {
+.head p {
     text-align: center;
 }
 
-.p2.active {
-    font-size: 100px;
-}
-
-@media all and (max-width: 2220px) {
-
-
-    main {
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-gap: 10px;
-    }
-}
 
 @media all and (max-width: 1600px) {
+
+    /* Ik heb hier mijn eerste breekpunt.  vanaf hier zullen grids gaan inklappen items dunner worden.*/
+
+    .head {
+        width: 1500px;
+
+    }
+
+    .head h1 {
+        font-size: 80px
+    }
 
     main {
         grid-template-columns: 33% 33% 33%;
@@ -200,6 +244,17 @@ h2 {
 
 @media all and (max-width: 1200px) {
 
+    /* Hoe dunner width, hoe meer er ingeklapt gaat worden.*/
+
+    .head {
+        width: 1100px;
+
+    }
+
+    .head h1 {
+        font-size: 70px
+    }
+
 
     main {
         grid-template-columns: 50% 50%;
@@ -207,7 +262,31 @@ h2 {
     }
 }
 
+@media all and (max-width: 950px) {
+
+    .head {
+        width: 860px;
+
+    }
+
+    .head h1 {
+        font-size: 60px
+    }
+
+
+}
+
+
 @media all and (max-width: 750px) {
+
+    .head {
+        width: 630px;
+
+    }
+
+    .head h1 {
+        font-size: 50px
+    }
 
     .formblock {
         width: 600px;
@@ -245,8 +324,31 @@ h2 {
         font-size: 20px;
     }
 
+    ol li {
+        font-size: 18px;
+        width: 500px;
+    }
+
+    p {
+        font-size: 18px;
+        width: 500px;
+    }
+
+
+
     main {
         grid-template-columns: 100%;
 
+    }
+}
+
+@media all and (max-width: 550px) {
+    .head {
+        width: 450px;
+
+    }
+
+    .head h1 {
+        font-size: 40px
     }
 }
