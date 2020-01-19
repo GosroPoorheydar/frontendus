@@ -16,10 +16,12 @@ body {
     100% {
         background-position: 50%;
     }
+
+    /* Bron:  */
 }
 
-header h1,
-    {
+header,
+h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 
@@ -28,6 +30,10 @@ header h1,
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+}
+
+.groot {
+    font-size: 100px;
 }
 
 nav {
@@ -99,7 +105,7 @@ main section {
     transition: 1s;
     width: 400px;
     height: 500px;
-    align-items: ;
+
 
 }
 
@@ -164,6 +170,18 @@ h2 {
     height: 1200px;
 
 
+}
+
+formblock.active {
+    background: linear-gradient(123deg, blue, darkblue, purple, black);
+}
+
+.p2 {
+    text-align: center;
+}
+
+.p2.active {
+    font-size: 100px;
 }
 
 @media all and (max-width: 2220px) {
