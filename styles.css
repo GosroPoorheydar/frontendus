@@ -175,7 +175,7 @@ section h1 {
 
 main {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-gap: 10px;
 }
 
@@ -314,7 +314,7 @@ h2 {
         width: 600px;
         height: 600px;
     }
-    
+
     /* ik vergroot hier de tekst en blokken om beter te werken op mobiel formaat*/
 
     section img {
