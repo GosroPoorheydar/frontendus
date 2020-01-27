@@ -105,6 +105,8 @@ a:focus {
     transition: 0.5s;
 }
 
+/* Ik gebruik hier hover en focus om duidelijk te maken aan de gebruiker wat zij geselecteerd hebben in de navigatie.*/
+
 article h2,
 section h2 {
     font-family: 'Roboto', sans-serif;
