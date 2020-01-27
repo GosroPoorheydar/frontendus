@@ -28,45 +28,49 @@
             <!-- Ik gebruik hier een class, omdat ik dit blok groter wil hebben dan ander blokken 
             ik doe hetzelfde op de index pagina. Ik gebruik dus in totaal 2 classes/divs.  hopelijk beschouwt u dit niet als "classitus". -->
 
-            <h1>Meer info ontvangen over cultuur?</h1>
 
-            <h2>Vul uw gegevens in.</h2>
 
             <form action="">
 
-                <p>Voornaam:</p> <input type="text" name="fname" placeholder="Your first name...">
+                <fieldset>
+
+                    <legend>Meer informatie ontvangen?</legend>
+
+                    <label for="fname">Voornaam </label><input type="text" name="fname" placeholder="Your first name...">
 
 
-                <p>Achternaam:</p> <input type="text" name="lname" placeholder="Your last name">
+                    <label for="lname">Achternaam</label> <input type="text" name="lname" placeholder="Your last name">
 
-                <p>E-mailadress:</p> <input type="email" name="lname" placeholder="something@something.org">
+                    <label for="mail">Emailadress</label> <input type="email" name="mail" placeholder="something@something.org">
 
-                <!-- Ik maak hier gebruik van placeholder om in "feed forward" informatie aan de gebruiker te geven. -->
+                    <!-- Ik maak hier gebruik van placeholder om in "feed forward" informatie aan de gebruiker te geven. -->
 
-                <p>Geboortedatum:</p>
-                <input type="date">
+                    <label for="birthdate">Geboortedatum</label>
+                    <input type="date" name="birthdate">
 
-                <p>Geslacht:</p>
+                    <legend>Geslacht</legend>
 
-                <label for="geslacht">Man</label>
-                <input type="radio" name="geslacht">
+                    <label for="geslacht">Man</label>
+                    <input type="radio" name="geslacht">
 
-                <label for="geslacht">Vrouw</label>
-                <input type="radio" name="geslacht">
+                    <label for="geslacht">Vrouw</label>
+                    <input type="radio" name="geslacht">
 
-                <label for="geslacht">Anders</label>
-                <input type="radio" name="geslacht">
+                    <label for="geslacht">Anders</label>
+                    <input type="radio" name="geslacht">
 
-                <label for="ik wil meer informatie ontvangen">Ik wil meer informatie ontvangen over updates.</label>
+                    <label for="ik wil meer informatie ontvangen">Ik wil meer informatie ontvangen over Cultuur.</label>
 
-                <input type="checkbox" name="Ik wil meer informatie ontvangen">
+                    <input type="checkbox" name="Ik wil meer informatie ontvangen">
 
-                <!-- Ik gebruik verschillende input types om er voor te zorgen dat de gebruiker 
+                    <!-- Ik gebruik verschillende input types om er voor te zorgen dat de gebruiker 
                 een makkelijkkere interactie heeft met de form en om foutieve data invoer tegen te gaan  -->
 
 
 
-                <input type="submit" value="bevestig">
+                    <input type="submit" value="bevestig">
+
+                </fieldset>
             </form>
         </section>
     </main>

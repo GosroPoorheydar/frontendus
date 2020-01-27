@@ -98,16 +98,22 @@ li {
 }
 
 
-a:hover {
+a:hover,
+a:focus {
 
     font-size: 36px;
     transition: 0.5s;
 }
 
-section h1 {
+article h2,
+section h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     transition: 1s;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px #000000;
 
 }
 
@@ -139,20 +145,21 @@ header {
 
 
 
+main article,
 main section {
     margin: 20px;
     border-radius: 25px;
     background: linear-gradient(123deg, yellow, orange, darkorange, red);
     transition: 1s;
     width: 400px;
-    height: 500px;
+    height: 650px;
 
     /* Ik gebruik hier een gradient voor de opmaak van mijn grid items. om een gevoel van schaduw te geven aan mijn items. 
          Ik gebruik ook veel transitions om de overgang van responsive items veel mooier en gladder te maken.*/
 
 }
 
-section img {
+article img {
     width: 320px;
     height: 190px;
     margin-left: 5px;
@@ -161,58 +168,75 @@ section img {
     /* Alle images hebben dezelfde grootte om goed in elk artikel te passen..*/
 }
 
-section figcaption {
+article figcaption {
     display: block;
     color: white;
     width: 320px;
+    letter-spacing: 1px;
+    line-height: 1.4;
 }
 
-section h1 {
-    text-align: center;
-    font-size: 2em;
-    color: white
-}
 
 main {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-gap: 60px;
 }
 
 form {
     font-family: 'Roboto', sans-serif;
     color: white;
     font-weight: 900;
-    border: 5px;
-    padding: 45px;
-    border-style: solid;
-    border-color: white;
+
+
     margin-top: 50px;
     margin-left: 50px;
-    width: 400px;
+    width: 50px;
 }
 
 input {
-    width: 400px;
+    width: 290px;
     height: 25px;
-    margin: 10px;
+    margin: 15px;
+    transition: 1s;
+}
+
+input:focus {
+    font-size: 24px;
+    transition: 1s;
+    height: 40px;
+
+
+
 }
 
 .head {
     width: 1880px;
     height: 800px;
 
+
+
     /* Dit is de breedte en hoogte van het blok op de index pagina. Deze verandert per breakpoint*/
 }
 
-.head h1 {
+fieldset {
+    max-width: 395px;
+    border-color: white;
+
+}
+
+
+
+.head h2 {
     font-size: 100px;
     font-family: 'Abril Fatface', cursive;
     font-weight: 100;
     text-shadow: 5px 2px #000000;
+    text-align: center;
+    color: white;
 }
 
-h2 {
+h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     text-align: center;
@@ -220,8 +244,9 @@ h2 {
 }
 
 .formblock {
-    width: 600px;
-    height: 1200px;
+    width: 450px;
+    height: 850px;
+
 
     /* Dit is het grid-item dat de basis vormt voor mijn form. */
 
@@ -239,13 +264,11 @@ h2 {
 
     }
 
-    .head h1 {
+    .head h2 {
         font-size: 80px
     }
 
-    main {
-        grid-template-columns: 33% 33% 33%;
-    }
+    main {}
 }
 
 @media all and (max-width: 1200px) {
@@ -257,15 +280,12 @@ h2 {
         height: 800px;
     }
 
-    .head h1 {
+    .head h2 {
         font-size: 70px
     }
 
 
-    main {
-        grid-template-columns: 50% 50%;
-
-    }
+    main {}
 }
 
 @media all and (max-width: 950px) {
@@ -276,7 +296,7 @@ h2 {
 
     }
 
-    .head h1 {
+    .head h2 {
         font-size: 60px
     }
 
@@ -291,7 +311,7 @@ h2 {
 
     }
 
-    .head h1 {
+    .head h2 {
         font-size: 50px
     }
 
@@ -303,21 +323,21 @@ h2 {
 
 
 
-    section figcaption {
+    article figcaption {
         display: block;
         margin-left: 60px;
         width: 400px;
     }
 
 
-    main section {
+    main article {
         width: 600px;
         height: 600px;
     }
 
     /* ik vergroot hier de tekst en blokken om beter te werken op mobiel formaat*/
 
-    section img {
+    article img {
         width: 350px;
         height: 220px;
         margin-left: 75px;
@@ -336,6 +356,7 @@ h2 {
     ol li {
         font-size: 18px;
         width: 500px;
+
     }
 
     p {
@@ -345,10 +366,7 @@ h2 {
 
 
 
-    main {
-        grid-template-columns: 100%;
-
-    }
+    main {}
 }
 
 @media all and (max-width: 550px) {
@@ -357,7 +375,7 @@ h2 {
 
     }
 
-    .head h1 {
+    .head h2 {
         font-size: 40px
     }
 }
