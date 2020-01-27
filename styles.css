@@ -332,7 +332,8 @@ h3 {
     }
 
 
-    main article {
+    main article,
+    main section {
         width: 600px;
         height: 600px;
     }
